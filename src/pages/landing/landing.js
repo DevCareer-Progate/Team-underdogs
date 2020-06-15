@@ -73,7 +73,13 @@ class Landing extends React.Component {
                   at the best rate, why not give us a trial.
                 </p>
 
-                <button className='secondary-btn'>GET STARTED</button>
+                <button
+                  className='secondary-btn'
+                  type='button'
+                  onClick={() => alert('hello')}
+                >
+                  GET STARTED
+                </button>
               </div>
               <div className='col-md-6 hero-img'>
                 <img src={heroImage} alt='Hero' className='img-fluid' />
@@ -403,7 +409,6 @@ class Landing extends React.Component {
                   <input
                     type='email'
                     name='email'
-                    id='email'
                     placeholder='Email'
                     className='form-control'
                   />

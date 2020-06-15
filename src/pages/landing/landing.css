@@ -8,6 +8,7 @@
   background-position: center center;
   padding: 0;
   padding-bottom: 13rem;
+  z-index: 10;
 }
 
 .landing .hero-text {
@@ -42,7 +43,7 @@
   border: none;
   font-size: 0.85rem;
   transition: all 0.3s ease;
-  outline: none;
+  outline: 0;
   font-weight: bold;
   color: #281ac8;
   background: #fff;
@@ -61,7 +62,7 @@
 /* About Styling */
 
 .landing-about {
-  margin-top: -5rem;
+  margin-top: 0;
 }
 
 .about-img {
@@ -331,6 +332,7 @@
   margin-top: 25px;
   outline: none;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .blog-carousel .item.active {
@@ -551,7 +553,7 @@
 
 @media (min-width: 425px) {
   .trade {
-    padding: 7rem 0 2rem;
+    padding: 6rem 0 2rem;
   }
 
   .blog-carousel .date,
@@ -587,7 +589,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-bottom: 13rem;
+    padding-bottom: 8rem;
+  }
+
+  .landing .hero-text {
+    margin-top: 0rem;
   }
 
   .landing .hero-img {

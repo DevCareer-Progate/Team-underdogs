@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './header.css'
 
 import logoColor from '../../assets/images/common/logo-color.png'
@@ -20,45 +20,56 @@ class Header extends Component {
           <img src={logoColor} alt='Logo' className='logo' />
           <ul className={`nav-list ${this.state.openMenu && 'open'}`}>
             <li className='nav-list-item'>
-              <Link
+              <NavLink
                 className='nav-list-link'
                 onClick={() => this.toggleSideBar()}
                 to='/'
+                exact
+                activeClassName='active'
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className='nav-list-item'>
-              <Link
+              <NavLink
                 className='nav-list-link'
                 onClick={() => this.toggleSideBar()}
                 to='/about'
+                exact
+                activeClassName='active'
               >
                 About Us
-              </Link>
+              </NavLink>
             </li>
             <li className='nav-list-item'>
-              <Link
+              <NavLink
                 className='nav-list-link'
                 onClick={() => this.toggleSideBar()}
                 to='/blog'
+                activeClassName='active'
+                exact
               >
                 Blog
-              </Link>
+              </NavLink>
             </li>
             <li className='nav-list-item'>
-              <Link
+              <NavLink
                 className='nav-list-link'
                 onClick={() => this.toggleSideBar()}
                 to='/contact'
+                activeClassName='active'
+                exact
               >
                 Contact Us
-              </Link>
+              </NavLink>
             </li>
             <li className='nav-list-item nav-btn'>
               <button
                 className='btn-login'
-                onClick={() => this.toggleSideBar()}
+                onClick={() => {
+                  this.toggleSideBar()
+                  this.props.openLoginModal()
+                }}
               >
                 LOGIN
               </button>
@@ -83,7 +94,9 @@ class Header extends Component {
           </ul>
 
           <div className='button'>
-            <button className='btn-login'>LOGIN</button>
+            <button className='btn-login' onClick={this.props.openLoginModal}>
+              LOGIN
+            </button>
           </div>
 
           <div
