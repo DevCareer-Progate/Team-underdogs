@@ -84,7 +84,14 @@ class Login extends Component {
             </div>
             <p className='form-text'>
               Don't have an account yet?{' '}
-              <button className='btn-link'>
+              <button
+                className='btn-link'
+                type='button'
+                onClick={() => {
+                  this.props.closeModal()
+                  this.props.openSignUpModal()
+                }}
+              >
                 <strong>Sign up</strong>
               </button>
             </p>
