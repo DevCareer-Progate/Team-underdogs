@@ -76,7 +76,7 @@ class Landing extends React.Component {
                 <button
                   className='secondary-btn'
                   type='button'
-                  onClick={() => alert('hello')}
+                  onClick={() => this.props.openSignUpModal()}
                 >
                   GET STARTED
                 </button>
