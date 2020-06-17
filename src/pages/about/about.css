@@ -1,0 +1,514 @@
+ /* general styles */
+ 
+ :root {
+     box-sizing: border-box;
+     --font: 'Poppins', sans-serif;
+     --darkColor: #333333;
+     --shadow: 0px 10px 20px rgba(68, 85, 113, 0.0418648);
+     --mainWhite: #fff;
+ }
+ 
+ *,
+ *::after,
+ *::before {
+     box-sizing: inherit;
+ }
+ 
+ .heroine {
+     width: 100%;
+     height: 700px;
+     background: linear-gradient(177.32deg, #fd749b -12.41%, #281ac8 88.56%);
+     display: flex;
+     position: relative;
+     z-index: -1;
+ }
+ 
+ .wrap__hero {
+     width: 100%;
+     justify-content: space-evenly;
+     margin: 98px auto;
+     display: flex;
+ }
+ 
+ .path {
+     position: absolute;
+     bottom: -10vh;
+     width: 100%;
+     z-index: -1;
+ }
+ 
+ .hero-left p {
+     color: var(--mainWhite);
+ }
+ 
+ .hero-left>p:nth-child(1) {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 12px;
+     line-height: 18px;
+ }
+ 
+ .hero-left>p:nth-child(2) {
+     font-weight: bold;
+     font-size: 40px;
+     line-height: 60px;
+ }
+ 
+ .hero-left>p:nth-child(3) {
+     font-weight: normal;
+     font-size: 1.125rem;
+     line-height: 27px;
+ }
+ 
+ .hero-right {
+     width: 549px;
+     height: 405px;
+     background-image: url({img});
+ }
+ /* END OF HERO SECTION */
+ /* CEO QUOTE SECTION */
+ 
+ .ceo-quote {
+     text-align: center;
+     position: relative;
+     top: -40px;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+ 
+ .ceo-quote p q {
+     font-style: normal;
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 40px;
+     text-align: center;
+ }
+ 
+ .ceo-quote p {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 25px;
+     color: var(--darkColor);
+     margin-top: 0.7rem;
+ }
+ 
+ @media screen and (max-width: 748px) {
+     .heroine {
+         width: 100vw;
+         padding: 0;
+         margin: 0;
+         opacity: 5;
+     }
+     .hero-right {
+         visibility: hidden;
+         width: 200px;
+         /* height: 305px; */
+     }
+     .hero-left {
+         justify-content: center;
+     }
+     .wrap__hero {
+         display: flex;
+         text-align: center;
+         justify-content: center;
+         flex-direction: column;
+         width: 100%;
+         padding-top: 10%;
+         margin-top: 10em;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-image: url('../../assets/images/common/img.svg');
+     }
+     .hero-left>p:nth-child(3) {
+         font-size: 2rem;
+         line-height: 40px;
+         opacity: 5;
+     }
+     .hero-left>p:nth-child(2) {
+         font-size: 3rem;
+         line-height: 50px;
+         margin-top: 1.5rem;
+     }
+     .hero {
+         justify-content: space-around;
+         height: 527px;
+     }
+     .path {
+         bottom: -5vh;
+     }
+     .ceo-quote {
+         text-align: center;
+         position: relative;
+         top: -40px;
+         left: 50%;
+         margin-top: 18%;
+         transform: translateX(-50%);
+     }
+ }
+ /* END OF CEO QUOTE SECTION */
+ /* ABOUT COINBASE COLUMN*/
+ 
+ .row {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .card_1 {
+     padding: 4em;
+     margin-right: 1em;
+     border-radius: 1em;
+     border: 0.1em solid #fd749b;
+     transition: 0.3s;
+     justify-content: center;
+     width: 1048px;
+ }
+ 
+ .card_1:hover {
+     transform: scale(1.05);
+     /* box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25); */
+ }
+ 
+ .about_coinbase_image {
+     align-self: center;
+ }
+ 
+ .about_coinbase_image img {
+     display: block;
+     margin: auto;
+ }
+ 
+ .about_coinbase_content {
+     justify-content: center;
+     padding: 1em;
+ }
+ 
+ .about_coinbase_msg {
+     text-align: center;
+ }
+ 
+ .about_coinbase_heading {
+     margin-top: 1em;
+     text-align: center;
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 28px;
+     background: -webkit-linear-gradient( 179.43deg, #fd749b -13.56%, #281ac8 158.3%);
+     /*  */
+     -webkit-text-fill-color: transparent;
+ }
+ 
+ .about_coinbase_heading .img_heading {
+     margin-top: 0;
+ }
+ 
+ .about_coinbase_icons {
+     margin-top: 1.5em;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     position: relative;
+ }
+ 
+ .about_coinbase_icons .icon {
+     padding-right: 1.5em;
+ }
+ 
+ @media screen and (max-width: 748px) {
+     .about_coinbase_container {
+         width: 100vw;
+         padding: 0 auto;
+         margin: 0;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+     }
+     .about_coinbase_content {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         padding: 1.5rem;
+     }
+     .about_coinbase_heading {
+         padding: 5px;
+     }
+     .about_coinbase_msg {
+         margin-top: 5%;
+     }
+     /* .about_coinbase_image {
+         width: 300px;
+     } */
+     .row {
+         width: 100%;
+         padding: 0;
+         margin-left: 0;
+         display: flex;
+         text-align: center;
+         align-items: center;
+     }
+     .card_1 {
+         width: 420px;
+     }
+ }
+ /* END OF ABOUT COINBASE COLUMN*/
+ /* OUR HISTORY SECTION */
+ 
+ .our-history {
+     text-align: center;
+     display: flex;
+     padding: 5rem;
+     flex-direction: column;
+     position: relative;
+ }
+ 
+ .our-history h3 {
+     font-style: normal;
+     color: #fd749b;
+     font-weight: bold;
+     font-size: 28px;
+     line-height: 65px;
+     margin-bottom: 0;
+     color: linear-gradient(179.26deg, #fd749b -13.56%, #281ac8 158.3%);
+ }
+ 
+ .our-history div {
+     width: 26.125rem;
+     height: 13.1875rem;
+ }
+ 
+ .our-history>div:nth-child(3) {
+     justify-content: flex-start;
+     margin-top: 3.5rem;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 30px;
+     text-align: right;
+ }
+ 
+ .our-history>div:nth-child(4) {
+     justify-content: flex-end;
+     align-self: flex-end;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 30px;
+     text-align: left;
+ }
+ 
+ .our-history>div:nth-child(5) {
+     justify-content: flex-end;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 30px;
+     text-align: right;
+ }
+ 
+ .our-history .tree {
+     position: absolute;
+     align-self: center;
+     margin-top: 10rem;
+     height: 635px;
+ }
+ 
+ @media screen and (max-width: 748px) {
+     .our-history {
+         width: 100vw;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+     .our-history div,
+     p {
+         width: 100%;
+         display: block;
+         text-align: center;
+         align-content: center;
+     }
+     .our-history div {
+         width: 100%;
+         display: block;
+         padding-top: 5%;
+         text-align: center;
+         align-content: center;
+     }
+     .our-history img {
+         visibility: hidden;
+         display: none;
+     }
+ }
+ /* END OF OUR HISTORY COLUMN */
+ /* team section */
+ 
+ .section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 0 0 91px 0;
+ }
+ 
+ .section__heading,
+ .section__paragraph {
+     font-family: var(--font);
+     font-style: normal;
+ }
+ 
+ .section__heading {
+     font-weight: bold;
+     font-size: 28px;
+     line-height: 65px;
+     /* for the color gradient on the heading */
+     background: -webkit-linear-gradient( 179.43deg, #fd749b -13.56%, #281ac8 158.3%);
+     /* -webkit-background-clip: text; */
+     -webkit-text-fill-color: transparent;
+ }
+ 
+ .section__heading::after {
+     content: '';
+     display: block;
+     width: 50px;
+     height: 8px;
+     border-radius: 5px;
+     background-color: #fd749b;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     margin-bottom: 21px;
+ }
+ 
+ .section__paragraph {
+     font-weight: normal;
+     font-size: 1rem;
+     line-height: 250%;
+     text-align: center;
+     margin-bottom: 61px;
+ }
+ 
+ .newsletter__rectangles {
+     position: relative;
+     width: 1500px;
+     height: 299px;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .newsletter__rectangles-element {
+     position: absolute;
+     background-color: #c4c4c4;
+     border-radius: 15px;
+ }
+ 
+ .newsletter__rectangles-element:nth-child(1),
+ .newsletter__rectangles-element:nth-child(5) {
+     width: 299px;
+     height: 185px;
+ }
+ 
+ .newsletter__rectangles-element:nth-child(2),
+ .newsletter__rectangles-element:nth-child(4) {
+     width: 299px;
+     height: 233px;
+ }
+ 
+ .newsletter__rectangles-element:nth-child(3) {
+     height: 299px;
+     width: 285px;
+ }
+ 
+ .first {
+     left: 163px;
+ }
+ 
+ .fifth {
+     left: 1028px;
+     z-index: -1;
+ }
+ 
+ .second {
+     left: 347px;
+ }
+ 
+ .third {
+     left: 601px;
+     background: linear-gradient(178.26deg, #f3b4c6 -13.56%, #666196 158.3%);
+     z-index: 2;
+     padding: 40px;
+     display: flex;
+     align-items: flex-end;
+     color: white;
+ }
+ 
+ .fourth {
+     left: 855px;
+     z-index: 1;
+ }
+ 
+ .second,
+ .fourth,
+ .third {
+     box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+ }
+ 
+ @media screen and (max-width: 748px) {
+     .section {
+         width: 100vw;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-content: center;
+         align-items: center;
+         text-align: center;
+     }
+     .section h3,
+     p {
+         padding-top: 5%;
+         text-align: center;
+     }
+     .newsletter__rectangles {
+         display: flex;
+         transform: scale(0.8);
+         text-align: center;
+         flex-direction: column;
+     }
+ }
+ /* end of team section-------------------------------------------------- */
+ /* subscription section */
+ 
+ .section__form {
+     display: flex;
+ }
+ 
+ input.section-input {
+     width: 388px;
+     height: 54px;
+     border-radius: 100px;
+     padding: 17px;
+     border: 2px solid salmon;
+ }
+ 
+ .section-button,
+ .section-input {
+     border: none;
+     font: var(--font);
+ }
+ 
+ .section-input:focus {
+     outline: none;
+ }
+ 
+ @media screen and (max-width: 746px) {
+     .section2 {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+     .section-input {
+         width: 170px;
+     }
+ }
