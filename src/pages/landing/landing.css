@@ -1,6 +1,6 @@
 /* Hero Styling */
 .landing .hero {
-  background: url('../../assets/images/common/hero-bg.svg');
+  background: url("../../assets/images/common/hero-bg.svg");
   width: 100%;
   height: 600px;
   background-size: cover;
@@ -25,6 +25,7 @@
 
 .landing .hero-text .heading span {
   font-weight: bold;
+  color: #281ac8;
 }
 
 .landing .hero-text .text {
@@ -82,7 +83,7 @@
 }
 
 .about-text .heading::after {
-  content: '';
+  content: "";
   width: 32px;
   height: 4px;
   background: #fd749b;
@@ -95,13 +96,14 @@
 .about-text .text {
   font-size: 0.9rem;
   margin-bottom: 2rem;
-  line-height: 180%;
+  line-height: 2.3em;
+  width: 87%;
 }
 
 /* Trade Styling */
 
 .trade {
-  background: url('../../assets/images/landing/trade-bg.svg');
+  background: url("../../assets/images/landing/trade-bg.svg");
   width: 100%;
   height: auto;
   background-size: 1000%;
@@ -140,19 +142,23 @@
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
-  padding: 0 0.5rem;
+  padding: 1.5rem 0.5rem;
   align-items: center;
   margin-top: 1rem;
+  width: 72%;
+  margin: 0 auto;
 }
 
 .trade-title {
   display: flex;
   margin-bottom: 0.5rem;
   align-items: center;
+  margin-left: 23px;
+
 }
 
 .trade-icon {
-  width: 15px;
+  width: 20%;
   margin-right: 0.5rem;
 }
 
@@ -160,10 +166,6 @@
   font-size: 0.8rem;
 }
 
-.trade-desc {
-  margin-left: auto;
-  margin-top: 1rem;
-}
 
 .trade .price {
   font-size: 0.7rem;
@@ -172,15 +174,19 @@
 
 .trade .price span {
   font-weight: bold;
-}
 
+}
+.trade .amount {
+  display: table;
+}
 .trade-badge {
   background: linear-gradient(179.48deg, #fd749b -13.56%, #281ac8 158.3%);
   border-radius: 5px;
   padding: 0.5rem 1.5rem;
-  display: inline-block;
+  display: block;
   color: #fff;
   font-size: 0.8rem;
+  width: 38%;
   margin: 0.5rem auto;
 }
 
@@ -214,7 +220,7 @@
 
 /* Trade Box Styling */
 .trade-box {
-  background: url('../../assets/images/landing/trade-box-bg.svg');
+  background: url("../../assets/images/landing/trade-box-bg.svg");
   width: 100%;
   height: 550px;
   background-size: cover;
@@ -229,7 +235,8 @@
   box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   position: absolute;
-  width: 90%;
+  width: 60%;
+  height: 455px;
   margin: auto;
   left: 50%;
   transform: translateX(-50%);
@@ -249,7 +256,7 @@
 
 .trade-box-container .heading::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 35px;
   height: 4px;
@@ -268,6 +275,10 @@
   width: 200px;
   padding: 2rem;
   border: 1px solid #fd749b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .trade-box-container .content-item img {
@@ -301,7 +312,7 @@
 
 .blog-carousel-header .head::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 35px;
   height: 4px;
@@ -360,6 +371,7 @@
   font-size: 0.7rem;
   color: #888;
   margin-bottom: 1rem;
+  line-height: 1.4rem;
 }
 
 .btn-alt {
@@ -370,11 +382,12 @@
   color: #fff;
   padding: 0.4rem 1rem;
 }
-
-.blog-carousel .item.active .heading {
-  color: #333;
+.blog-carousel .item.active .heading .first-line{
+  color: #FD749B;
 }
-
+.blog-carousel .item.active .heading .second-line{
+  color: #281AC8;
+}
 .blog-carousel .item.active .description {
   font-size: 0.8rem;
   color: #333;
@@ -400,7 +413,7 @@
 }
 
 .testimony {
-  background: url('../../assets/images/landing/testimony-bg.svg');
+  background: url("../../assets/images/landing/testimony-bg.svg");
   width: 100%;
   height: auto;
   background-size: cover;
@@ -422,7 +435,7 @@
 
 .testimony .head::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 35px;
   height: 4px;
@@ -484,7 +497,7 @@
 
 .landing-app .head::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 35px;
   height: 4px;
@@ -508,7 +521,7 @@
 }
 
 .phones-container {
-  background: url('../../assets/images/landing/phones-bg.svg');
+  background: url("../../assets/images/landing/phones-bg.svg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -578,12 +591,20 @@
     padding: 0.6rem 1.4rem;
     font-size: 0.8rem;
   }
+
+  /* .about-text .text { */
+    /* font-size: 0.9rem;
+    margin-bottom: 2rem;
+    line-height: 2.3em; */
+    /* width: 100%; */
+  /* /* }  */
+
 }
 
 @media (min-width: 768px) {
   .landing .hero {
     margin-bottom: 4rem;
-    background: url('../../assets/images/common/hero-bg.svg');
+    background: url("../../assets/images/common/hero-bg.svg");
     width: 100%;
     height: 500px;
     background-size: cover;
@@ -606,13 +627,17 @@
 
   .landing-about {
     margin-top: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 
   .about-text .heading {
     font-size: 1.8rem;
+    margin-top: 102px;
+    width: 53%;
   }
-
+  .about-text .heading span {
+    color: #281ac8;
+  }
   .trade {
     height: 500px;
     background-size: 900px;
@@ -631,6 +656,8 @@
 
   .blog-carousel .item {
     height: 350px;
+    padding: 2.5rem;
+     
   }
 
   .blog-carousel .item.active {
@@ -679,9 +706,14 @@
   .newsletter {
     margin: 20rem 0 5rem;
   }
+ 
 }
 
 @media (min-width: 1024px) {
+  .about-text .text {
+    width: 100%;
+  }
+  
   .landing .hero {
     height: 750px;
   }
@@ -700,20 +732,29 @@
   }
 
   .trade {
-    background: url('../../assets/images/landing/trade-bg.svg');
     width: 100%;
     height: 900px;
-    margin: -5rem 0;
+    margin: -4rem 0;
     padding: 0;
     background-size: cover;
+    background-position: center;
     position: relative;
   }
-
+  .trade-box-container .heading {
+    font-size: 2rem;
+  }
   .trade-container {
     position: absolute;
-    width: 90%;
-    top: 11rem;
+    width: 72%;
+    top: 6rem;
     left: 50%;
     transform: translate(-50%, 50%);
+    margin: 98px 0;
+    height: 39%;
+  }
+
+  .trade-box-container .content-item {
+    width: 63%;
+    height: 268px;
   }
 }

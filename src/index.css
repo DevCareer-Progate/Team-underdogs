@@ -13,6 +13,12 @@ code {
 }
 
 html,
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+html,
 body,
 div,
 span,

@@ -302,7 +302,8 @@ class Landing extends React.Component {
               >
                 <p className='date'>01 FEB, 2019 | Technology</p>
                 <p className='heading'>
-                  How to Sell Your Itunes GiftCard With Us.
+                <span className="first-line">HOW TO SELL YOUR ITUNES  </span>
+                <span className="second-line">  GIFTCARD WITH US .</span> 
                 </p>
                 <p className='description'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -318,9 +319,10 @@ class Landing extends React.Component {
               <div
                 className={`item ${this.state.currentSlide === 1 && 'active'}`}
               >
-                <p className='date'>01 FEB, 2019 | Technology</p>
+                <p className='date'>19 JUNE, 2019 | BUSINESS</p>
                 <p className='heading'>
-                  How to Sell Your Itunes GiftCard With Us.
+               <span className="first-line"> ETH TO NAIRA EXCHANGE</span>
+                <span className="second-line"> RATE IS NOW #400 PER...</span> 
                 </p>
                 <p className='description'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -336,9 +338,10 @@ class Landing extends React.Component {
               <div
                 className={`item ${this.state.currentSlide === 2 && 'active'}`}
               >
-                <p className='date'>01 FEB, 2019 | Technology</p>
+                <p className='date'>01 FDEC, 2019 | LIFESTYLE</p>
                 <p className='heading'>
-                  How to Sell Your Itunes GiftCard With Us.
+                <span className="first-line"> EXCHANGE 5 PRODUCTS & GET</span>
+                <span className="second-line">  1 FREE PRODUCT.</span> 
                 </p>
                 <p className='description'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit

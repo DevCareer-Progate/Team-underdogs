@@ -195,6 +195,7 @@
   background: #000;
   border-radius: 30px;
   transition: all 0.3s ease;
+  margin-left: 15px;
 }
 
 .hamburger span:not(:nth-child(2)) {
