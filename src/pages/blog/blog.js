@@ -13,14 +13,14 @@ function Blog() {
       <section className='background-img'>
         <div className='container'>
           <div className='row'>
-            <div className='col-sm-12 col-md-4 col-lg-4 mx-auto mt-5'>
+            <div className='col-sm-12 col-md-4 col-lg-4 mx-auto mt-5 col-txt'>
               <div className='left-text'>
-                <h1>
+                <h1 className="left-text-head">
                   Stay updated,
                   <br />
                   Never miss a post.
                 </h1>
-                <p>
+                <p className="left-text-para">
                   Get to know the latest stuff about our services
                   <br />
                   via our blog post.
@@ -39,9 +39,9 @@ function Blog() {
 
       <section className='gift-section'>
         <div className='container'>
-          <div className='row'>
+          <div className='row cards'>
             <div className='card ml-3 mr-3 mt-5'>
-              <img src={Gift} className='card-img-top' alt='' />
+              <img src={Gift} className='img-fluid card-img-tp' alt='' />
               <div className='card-body'>
                 <h5 className='card-title'>
                   HOW TO SELL YOUR ITUNES GIFTCARD WITH US.
@@ -61,15 +61,16 @@ function Blog() {
                 </Link>
               </div>
             </div>
+            </div>
           </div>
-        </div>
+
       </section>
 
       <section className='merry-section'>
         <div className='container'>
           <div className='row'>
             <div className='card ml-3 mr-3 mt-5'>
-              <img src={Merry} className='card-img-top' alt='' />
+              <img src={Merry} className='img-fluid card-img-tp' alt='' />
               <div className='card-body'>
                 <h5 className='card-title'>
                   HOW TO SELL YOUR ITUNES GIFTCARD WITH US.
@@ -97,7 +98,7 @@ function Blog() {
         <div className='container'>
           <div className='row'>
             <div className='card ml-3 mr-3 mt-5'>
-              <img src={Ethereum} className='card-img-top' alt='' />
+              <img src={Ethereum} className='img-fluid card-img-tp' alt='' />
               <div className='card-body'>
                 <h5 className='card-title'>
                   HOW TO SELL YOUR ITUNES GIFTCARD WITH US.

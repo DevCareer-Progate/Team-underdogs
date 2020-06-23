@@ -2,6 +2,10 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import '../ether/ethereum.css'
 import btcz from '../../../assets/images/Blog/btc-falling.svg'
+import Facebook from '../../../assets/images/Blog/facebook.svg'
+import Twitter from '../../../assets/images/Blog/twitter.svg'
+import Youtube from '../../../assets/images/Blog/youtube.svg'
+
 
 
 const Ethereum = () => {
@@ -22,25 +26,25 @@ const Ethereum = () => {
                 <div className="container">
                     <div className="row content-wrapper">
 
-                        <p>But i must explain to you how all this mistaken idea of denouncing pleasure and praising pair
+                        <p className="text-center">But i must explain to you how all this mistaken idea of denouncing pleasure and praising pair
                             was born and i will give you the complete account of the system, and expound the actual teachings
                             of the great explorer of the truth, the master-builder of human happiness. But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
                             born and i will give you a complete account of the system, and expound the actual teachings of the 
                             great explorer of the truth, the master-builder of human happiness.
                         </p>
-                        <p>Planning your next trip</p>
-                        <p>But i must explain to you how all this mistaken idea of denouncing pleasure and praising pair
+                        <p className="text-center">Planning your next trip</p>
+                        <p className="text-center">But i must explain to you how all this mistaken idea of denouncing pleasure and praising pair
                             was born and i will give you the complete account of the system, and expound the actual teachings
                             of the great explorer of the truth, the master-builder of human happiness. But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
                             born and i will give you a complete account of the system, and expound the actual teachings of the 
                             great explorer of the truth, the master-builder of human happiness.
                         </p>
-                        <p>The next part of planning is to determine your starting and ending parts. This could be a place close
+                        <p className="text-center">The next part of planning is to determine your starting and ending parts. This could be a place close
                             to home and sail in one area or start and finish at two different parts. Generally, starting and stopping
                             in the same part will save you money and is usally more convenient. You can als fly to a dstination far from home, and then sail another exotic sea. There are luxury yacht
                             charter companies that cruise the Caribbean and Meditererranean seas or around Alaska, the Panama Cabnal, or any place you can imagine.
                         </p>
-                        <p>Determining the type of cruise is another aspect of planning a chartered yatching trip. You can have as little or many crew members as the ship will hold. A 
+                        <p className="text-center">Determining the type of cruise is another aspect of planning a chartered yatching trip. You can have as little or many crew members as the ship will hold. A 
                             captain takes all the worries out of navigating and onboard houskeeping services make it a real vacation that rivals the finest hotel services. 
                             You can also choose to have a chef and service crew as part of your vacation package.
                         </p>
@@ -52,19 +56,21 @@ const Ethereum = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 col-md-6 col-lg-6 left-items">
-                            <p>
+                            <div className="leftItems">
+                            <p style={{textAlign:'justify'}} id="left-itemsP">
                                 if you like the idea of knowing what is is really like to sail, but don't want to risk safety, you can charter a sailing cruise that puts
                                 you in the role of deck hand. A competent crew will detect you as to your "chores" for keeping the ship in the top shape and on course.
                             </p>
-                            <p>
+                            <p style={{textAlign:'justify'}} id="left-itemsP">
                                 Destinations & Ports of important Charte Companies One of the greatest benefits of choosing a chartered cruise as a vacation is the choice.
                                 You will most likely have a rough itinerary and that can be affected by the weather. However, you are flexible in deciding how long you want to stay in a particular Port
                                 and if you want to add or subtract stops along the way.
                             </p>
+                            </div>
                         </div>
 
                         <div className="col-sm-12 col-md-6 col-lg-6">
-                            <img style={{ width:'60%'}} src={btcz} alt="" />
+                            <img className="img-fluid" style={{ width:'60%'}} src={btcz} alt="" />
                         </div>
                     </div>
                 </div>
@@ -73,12 +79,12 @@ const Ethereum = () => {
             <section className="btc-content-beneat">
                 <div className="container">
                     <div className="row">
-                        <div className="col">
-                            <p>
+                        <div className="col paragraphs">
+                            <p className="text-center">
                                 Your yacht is your hotel that travels with you. There is only one flight and one hotel to book! Thrn you take
                                 all your luggage and unpack it just once to enjoy several days of new destinations.
                             </p>
-                            <p>
+                            <p className="text-center" style={{textAlign:"center"}}>
                                 If you have never experienced crusing before, a chartered experience is a great way to get your feet wet. It is different from cruise lines with thousands
                                 of guests because the people on your ship will be your friends and family. The personal touchs of a chartered trip will help
                                 you to develop your love for the sea with with all the best benefits of commercial cruises.
@@ -92,18 +98,18 @@ const Ethereum = () => {
                 <div className="container" style={{width:'60%'}}>
                     <div className="row">
                         <div className="col-sm-12 col-md-6 col-lg-6 socials-left">
-                                 <p style={{fontWeight:'bold', color:'#333333', fontSize:'16px'}}>Tags: Business, Capital, Finance</p>
+                                 <p style={{fontWeight:'bold', color:'#333333', fontSize:'16px', marginTop:'10px'}}>Tags: Business, Capital, Finance</p>
                                  <h2 style={{fontWeight:'bold', color:'#2F2F2F', fontSize:'18px'}}>How to sell your iTunes<br /> giftcard to us</h2>
                                  <Link to="/" style={{fontSize:'12px', color:'#989898'}}>Prev Post</Link>
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 socials-right">
                                 <ul className="socialz">
-                                    <li> Share with</li>
-                                    <li><Link to="/"><i className="fab fa-facebook-f"></i></Link></li>
-                                    <li><Link to="/"><i className="fab fa-twitter"></i></Link></li>
-                                    <li><Link to="/"><i className="fab fa-youtube"></i></Link></li>
+                                    <li style={{marginBottom:'5px'}}> Share with</li>
+                                    <li><Link to="/"><img src={Facebook}  alt="facebook" style={{width:'24px', height:'24px'}} /></Link></li>
+                                    <li><Link to="/"><img src={Twitter}  alt="facebook" style={{width:'24px', height:'24px'}} /></Link></li>
+                                    <li><Link to="/"><img src={Youtube}  alt="facebook" style={{width:'24px', height:'24px'}} /></Link></li>
                                 </ul>
-                                    <h2 style={{fontWeight:'bold', color:'#FD749B', fontSize:'18px'}}>Exchange 5 product<br /> and get 1 free product</h2>
+                                    <h2 className="exchange-text" style={{fontWeight:'bold', fontSize:'18px'}}>Exchange 5 product<br /> and get 1 free product</h2>
                                     <Link to="/"  style={{fontSize:'12px', color:'#989898'}}>Next Post</Link>
                         </div>
                     </div>
@@ -122,19 +128,22 @@ const Ethereum = () => {
             </section>
 
             <section className="form">
-                <div className="container" style={{width:'60%'}}>
-                    <form  >
-                    <div className="form-row">
-                        <div className="form-group col-sm-12 col-md-6">
-                            <input type="email" className="form-control" id="inputEmail4" placeholder="Name*" />
-                            </div>
-                            <div className="form-group col-sm-12 col-md-6">
-                            <input type="password" className="form-control" id="inputPassword4" placeholder="Email*" />
-                            </div>
-                        </div> 
-                            <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Your comment" rows="3" />
-                    </form>  
-                </div>
+                <form className="myForm">
+                    <div className="form-row" style={{marginTop:'10px'}}>
+                        <div className="col">
+                        <input type="text" className="form-control" placeholder="First name"  />
+                        </div>
+                        <div className="col">
+                        <input type="text" className="form-control" placeholder="Last name" />
+                        </div>
+                    </div>
+                    <div className="form-group" style={{marginTop:'20px'}}>
+                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div className="publish">
+                    <button type="submit" class="btn">Publish</button>
+                    </div>
+                </form>
             </section>
         </Fragment>
     )
