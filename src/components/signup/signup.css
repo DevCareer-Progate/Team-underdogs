@@ -1,0 +1,112 @@
+.signup__container {
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.signup__container-heading {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  margin: 0px 0 5px 0;
+  background: -webkit-linear-gradient(
+    179.43deg,
+    #fd749b -13.56%,
+    #281ac8 158.3%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.signup__container-paragraph {
+  font-size: 11px;
+  line-height: 25px;
+  color: #333;
+  margin-bottom: 22.5px;
+  text-align: center;
+}
+.errormessage {
+  font-size: 12px;
+  color: red;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.signup__container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22.5px;
+}
+
+.form-input {
+  border: 1px solid #d1d1d1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: block;
+  padding: 1.2em 1.5em;
+  height: 40px;
+  width: 250px;
+}
+
+.form-input::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #2f2f2f;
+}
+.form-input:focus {
+  outline: none;
+}
+.form-input:not(:first-child) {
+  margin-top: 15px;
+}
+.form-button {
+  border: none;
+  margin-top: 18px;
+  min-width: 115px;
+  min-height: 45px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(179.37deg, #fd749b -13.56%, #281ac8 158.3%);
+  border-radius: 100px;
+  box-shadow: 0.1px 0.1px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in;
+}
+.form-button:focus {
+  outline: none;
+}
+.form-button:hover {
+  transform: translateY(-3px);
+}
+.signup__container-paragraph--mod {
+  color: #2f2f2f;
+  margin-bottom: 25px;
+}
+.signup__container-paragraph--mod a {
+  font-weight: bold;
+  color: #2f2f2f;
+}
+@media (min-width: 1020px) {
+  .form-button {
+    width: 157px;
+    height: 54px;
+    font-size: 14px;
+  }
+  .signup__container-paragraph {
+    font-size: 16px;
+  }
+  .signup__container-heading {
+    font-size: 24px;
+  }
+  .form-input {
+    width: 347px;
+    height: 60px;
+  }
+  .signup__container {
+    padding: 0 0;
+  }
+}

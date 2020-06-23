@@ -81,10 +81,9 @@ const about = props => (
           </div>
         </div>
       </div>
+
     </div>
     {/* <!--End of About coinbase container-->
-
-
                 <!-- HISTORY SECTION --> */}
     <section className="our-history">
       <h3> Our history </h3>
