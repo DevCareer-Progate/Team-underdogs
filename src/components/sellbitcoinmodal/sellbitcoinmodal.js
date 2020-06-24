@@ -1,16 +1,14 @@
 import React from 'react';
-import './giftcard.css';
+import '../giftcardmodal/giftcard.css';
 
-// The component below represents the Giftcard Modal...
+// The component below represents the BItcoin Modal...
 
 // in other to call it in whatever parent container  you need to pass the props; "img " and "bgcolor" and "type"
 
-// The type prop can only have three values
+// The type prop can only have two value
 
-// 1. "amazon "
-// 2. "App Store iTunes "
-// 3. "steam"
-// 4 " Google Play"
+//1.BTC
+//2.Eth
 
 // for Example :  <Giftcard
 //     img={this.state.img}
@@ -19,18 +17,18 @@ import './giftcard.css';
 //      />
 
 // important:
-// import the image in the parent container and save it as one of its states before passing it down as a prop to the Giftcard component
+// import the image in the parent container and save it as one of its states before passing it down as a prop to the sellbitcoin component
 
-const Giftcard = ({ img, bgColor, type }) => {
-  let circleBackgroundCOlor = { background: bgColor };
+const Sellbitcoin = ({ img, bgcolor, type }) => {
+  let circleBackgroundCOlor = { background: bgcolor, top: '-33%' };
   return (
     <div className="modal__container">
       <div className="circle" style={circleBackgroundCOlor}></div>
       <div className="modal__container__top">
         <img src={img} alt="giftcardimage" className="giftcard-variety" />
         <p className="modal__container__top-txt">
-          <span className="span">N360.00 </span> is our conversion rate for
-          every {type} card on this platform
+          <span>N360.00 </span> is our conversion rate for every 0.1{type} on
+          this platform
         </p>
       </div>
       <div className="modal__container__bottom">
@@ -39,19 +37,6 @@ const Giftcard = ({ img, bgColor, type }) => {
           recieving during the total transaction process
         </p>
         <form action="#" className="modal__container__bottom-form">
-          <select name="card-type" id="card-type" className="form-dropdown">
-            <option value="">Card Type</option>
-            <option value="Amazon/option">Amazon/option</option>
-            <option value="App Store &amp; iTunes">
-              App Store &amp; iTunes
-            </option>
-            <option value="Google Play">Google Play</option>
-            <option value="Steam">Steam</option>
-          </select>
-          <select name="card-type" id="card-type" className="form-dropdown">
-            <option value="">Card Currency</option>
-            <option value="Naira">Naira</option>
-          </select>
           <input
             type="number"
             required
@@ -68,5 +53,4 @@ const Giftcard = ({ img, bgColor, type }) => {
     </div>
   );
 };
-
-export default Giftcard;
+export default Sellbitcoin;

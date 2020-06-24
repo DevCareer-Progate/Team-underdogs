@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Modal from '../modal/modal';
 import './signup.css';
-import heroImage from '../../assets/images/Newgiftcards/steam.svg';
 
 //helper function for checking validity of form before submitting
 const formValid = ({ formErrors, ...rest }) => {
@@ -30,7 +29,6 @@ class Signup extends Component {
     super(props);
     //state variables
     this.state = {
-      hi: heroImage,
       fullName: '',
       email: '',
       password: '',
