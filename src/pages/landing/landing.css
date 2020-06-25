@@ -1,6 +1,6 @@
 /* Hero Styling */
 .landing .hero {
-  background: url('../../assets/images/common/hero-bg.svg');
+  background: url("../../assets/images/common/hero-bg.svg");
   width: 100%;
   height: 600px;
   background-size: cover;
@@ -82,16 +82,8 @@
   margin-bottom: 2rem;
   font-weight: bold;
 }
-
 .about-text .heading::after {
-  content: '';
-  width: 32px;
-  height: 4px;
-  background: #fd749b;
-  position: absolute;
-  bottom: -0.5rem;
-  display: block;
-  border-radius: 50px;
+  display: none;
 }
 
 .about-text .text {
@@ -99,12 +91,13 @@
   margin-bottom: 2rem;
   line-height: 2.3em;
   width: 87%;
+  margin: auto;
 }
 
 /* Trade Styling */
 
 .trade {
-  background: url('../../assets/images/landing/trade-bg.svg');
+  background: url("../../assets/images/landing/trade-bg.svg");
   width: 100%;
   height: auto;
   background-size: 1000%;
@@ -218,7 +211,7 @@
 
 /* Trade Box Styling */
 .trade-box {
-  background: url('../../assets/images/landing/trade-box-bg.svg');
+  background: url("../../assets/images/landing/trade-box-bg.svg");
   width: 100%;
   height: 550px;
   background-size: cover;
@@ -234,7 +227,7 @@
   border-radius: 30px;
   position: absolute;
   width: 90%;
-  height: 455px;
+  height: 90%;
   margin: auto;
   left: 50%;
   transform: translateX(-50%);
@@ -254,7 +247,7 @@
 
 .trade-box-container .heading::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 35px;
   height: 4px;
@@ -310,7 +303,7 @@
 
 .blog-carousel-header .head::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 35px;
   height: 4px;
@@ -411,7 +404,7 @@
 }
 
 .testimony {
-  background: url('../../assets/images/landing/testimony-bg.svg');
+  background: url("../../assets/images/landing/testimony-bg.svg");
   width: 100%;
   height: auto;
   background-size: cover;
@@ -433,7 +426,7 @@
 
 .testimony .head::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 35px;
   height: 4px;
@@ -495,7 +488,7 @@
 
 .landing-app .head::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 35px;
   height: 4px;
@@ -519,7 +512,7 @@
 }
 
 .phones-container {
-  background: url('../../assets/images/landing/phones-bg.svg');
+  background: url("../../assets/images/landing/phones-bg.svg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -589,12 +582,15 @@
     padding: 0.6rem 1.4rem;
     font-size: 0.8rem;
   }
+  .about-text .heading::after {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
   .landing .hero {
     margin-bottom: 4rem;
-    background: url('../../assets/images/common/hero-bg.svg');
+    background: url("../../assets/images/common/hero-bg.svg");
     width: 100%;
     height: 500px;
     background-size: cover;
@@ -702,6 +698,16 @@
 }
 
 @media (min-width: 1024px) {
+  .about-text .heading::after {
+    content: "";
+    width: 32px;
+    height: 4px;
+    background: #fd749b;
+    position: absolute;
+    bottom: -0.5rem;
+    display: block;
+    border-radius: 50px;
+  }
   .about-text .text {
     width: 100%;
   }
