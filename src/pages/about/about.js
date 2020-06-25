@@ -88,8 +88,8 @@ const about = props => (
       <h3> Our history </h3>
       <img className='ine_img' src={line} alt='line' />
       <div>
-        <h4 className='history-date'> May 2010 </h4>
-        <p>
+        <h4 className='history-date' style={{marginRight:'15px'}}> May 2010 </h4>
+        <p style={{marginRight:'15px'}}>
           Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem.Curabitur
           aliquam tellus eu nisl suscipit, at vestibulum ex rutrum.Nulla
           facilisi.Cras ullamcorper pellentesque orci, nec vestibulum
@@ -97,8 +97,8 @@ const about = props => (
         </p>
       </div>
       <div>
-        <p className='history-date'> May 2017 </p>
-        <p>
+        <p className='history-date' style={{marginLeft:'15px'}}> May 2017 </p>
+        <p style={{marginLeft:'15px'}}>
           Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem.Curabitur
           aliquam tellus eu nisl suscipit, at vestibulum ex rutrum.Nulla
           facilisi.Cras ullamcorper pellentesque orci, nec vestibulum
@@ -106,8 +106,8 @@ const about = props => (
         </p>
       </div>
       <div>
-        <p className='history-date'> May 2019 </p>
-        <p>
+        <p className='history-date' style={{marginRight:'15px'}}> May 2019 </p>
+        <p style={{marginRight:'15px'}}>
           Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem.Curabitur
           aliquam tellus eu nisl suscipit, at vestibulum ex rutrum.Nulla
           facilisi.Cras ullamcorper pellentesque orci, nec vestibulum
@@ -147,7 +147,7 @@ const about = props => (
       </p>
       <form action='#' method='GET' className='section__form'>
         <input type='text' className='section-input' placeholder='EMAIL' />
-        <button className='section-button header__end-cta'>DISCOVER</button>
+        <button className='section-button header__end-cta' style={{borderRadius:'100px', marginLeft:'10px', width:'160px', height:'54',textAlign:'center'}}>DISCOVER</button>
       </form>
     </section>
     {/* <!-- end of subscription markup --> */}
