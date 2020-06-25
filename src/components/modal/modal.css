@@ -16,7 +16,7 @@
   border-radius: 20px;
   box-sizing: border-box;
   left: 50%;
-  transform: translate(-50%, 30%);
+  transform: translate(-50%, 5%);
   transition: all 0.3s ease-out;
 }
 
