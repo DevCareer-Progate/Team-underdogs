@@ -65,7 +65,7 @@ class Landing extends React.Component {
               <div className='col-md-6 hero-text'>
                 <h3 className='heading'>
                   We provide easy solution to exchange your{' '}
-                  <span>Bitcoin/GiftCard for money</span>
+                  <span style={{color:'#ffffff'}}>Bitcoin/GiftCard for money</span>
                 </h3>
 
                 <p className='text'>

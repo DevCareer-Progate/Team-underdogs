@@ -131,14 +131,14 @@ const Ethereum = () => {
                 <form className="myForm">
                     <div className="form-row" style={{marginTop:'10px'}}>
                         <div className="col">
-                        <input type="text" className="form-control" placeholder="First name"  />
+                        <input type="text" className="form-control" placeholder="Name*"  />
                         </div>
                         <div className="col">
-                        <input type="text" className="form-control" placeholder="Last name" />
+                        <input type="email" className="form-control" placeholder="Email*" />
                         </div>
                     </div>
                     <div className="form-group" style={{marginTop:'20px'}}>
-                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Comment"></textarea>
                     </div>
                     <div className="publish">
                     <button type="submit" class="btn">Publish</button>
