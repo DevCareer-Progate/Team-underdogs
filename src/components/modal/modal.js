@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-import './modal.css'
+import './modal.css';
 
 function Modal({ children, show, closeModal }) {
   return show ? (
-    <>
-      <div className='backdrop' onClick={closeModal}></div>
-      <div className='coin-modal'>{children}</div>
-    </>
-  ) : null
+    <div className="container">
+      <div className="backdrop" onClick={closeModal}></div>
+      <div className="coin-modal">{children}</div>
+    </div>
+  ) : null;
 }
 
-export default Modal
+export default Modal;
