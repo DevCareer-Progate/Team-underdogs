@@ -1,0 +1,58 @@
+.collection {
+  width: 340px;
+  text-align: center;
+  padding: 1rem;
+  z-index: 600;
+}
+
+.collection .form-header {
+  background: -webkit-linear-gradient(
+    179.66deg,
+    #fd749b -13.56%,
+    #281ac8 158.3%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.collection .form-text {
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.collection .card-img {
+  cursor: pointer;
+}
+
+.collection .btn-collection {
+  margin-top: 1rem;
+}
+
+.collection .btn-link {
+  border: none;
+  background: transparent;
+  color: #888;
+  cursor: pointer;
+}
+
+@media (min-width: 425px) {
+  .collection {
+    width: 350px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .collection input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .collection {
+    width: 500px;
+    height: 300px;
+  }
+}
