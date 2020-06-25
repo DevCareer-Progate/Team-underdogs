@@ -1,5 +1,6 @@
-import React from 'react';
-import '../giftcardmodal/giftcard.css';
+import React from 'react'
+import '../giftcardmodal/giftcard.css'
+import Modal from '../modal/modal'
 
 // The component below represents the BItcoin Modal...
 
@@ -19,38 +20,40 @@ import '../giftcardmodal/giftcard.css';
 // important:
 // import the image in the parent container and save it as one of its states before passing it down as a prop to the sellbitcoin component
 
-const Sellbitcoin = ({ img, bgcolor, type }) => {
-  let circleBackgroundCOlor = { background: bgcolor, top: '-33%' };
+const Sellbitcoin = ({ img, bgcolor, type, showBitcoinModal, closeModal }) => {
+  let circleBackgroundCOlor = { background: bgcolor, top: '-33%' }
   return (
-    <div className="modal__container">
-      <div className="circle" style={circleBackgroundCOlor}></div>
-      <div className="modal__container__top">
-        <img src={img} alt="giftcardimage" className="giftcard-variety" />
-        <p className="modal__container__top-txt">
-          <span>N360.00 </span> is our conversion rate for every 0.1{type} on
-          this platform
-        </p>
+    <Modal show={showBitcoinModal} closeModal={closeModal}>
+      <div className='modal__container'>
+        <div className='circle' style={circleBackgroundCOlor}></div>
+        <div className='modal__container__top'>
+          <img src={img} alt='giftcardimage' className='giftcard-variety' />
+          <p className='modal__container__top-txt'>
+            <span>N360.00 </span> is our conversion rate for every 0.1{type} on
+            this platform
+          </p>
+        </div>
+        <div className='modal__container__bottom'>
+          <p>
+            The total value you derived here will be the amount you will be
+            recieving during the total transaction process
+          </p>
+          <form action='#' className='modal__container__bottom-form'>
+            <input
+              type='number'
+              required
+              placeholder='Amount'
+              className='form-input'
+              min='0'
+            />
+            <div className='form-ouput'>
+              <p>#0.00</p>
+            </div>
+            <button className='form-button'>Proceed</button>
+          </form>
+        </div>
       </div>
-      <div className="modal__container__bottom">
-        <p>
-          The total value you derived here will be the amount you will be
-          recieving during the total transaction process
-        </p>
-        <form action="#" className="modal__container__bottom-form">
-          <input
-            type="number"
-            required
-            placeholder="Amount"
-            className="form-input"
-            min="0"
-          />
-          <div className="form-ouput">
-            <p>#0.00</p>
-          </div>
-          <button className="form-button">Proceed</button>
-        </form>
-      </div>
-    </div>
-  );
-};
-export default Sellbitcoin;
+    </Modal>
+  )
+}
+export default Sellbitcoin

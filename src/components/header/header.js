@@ -80,12 +80,20 @@ class Header extends Component {
               </a>
               <ul className='dropdown-list' id='dropdown-menu'>
                 <li>
-                  <Link to='sell' className='bitcoin link'>
+                  <Link
+                    to='#'
+                    onClick={() => this.props.openBitCoinModal()}
+                    className='bitcoin link'
+                  >
                     Sell Bitcoin
                   </Link>
                 </li>
                 <li>
-                  <Link to='sell' className='giftcard link'>
+                  <Link
+                    to='#'
+                    onClick={() => this.props.openGiftCardModal()}
+                    className='giftcard link'
+                  >
                     Sell Giftcard
                   </Link>
                 </li>

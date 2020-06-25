@@ -1,0 +1,70 @@
+.collection-lg {
+  width: 340px;
+  text-align: center;
+  padding: 0.5rem;
+  z-index: 600;
+}
+
+.collection-lg .form-header {
+  background: -webkit-linear-gradient(
+    179.66deg,
+    #fd749b -13.56%,
+    #281ac8 158.3%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.collection-lg .form-text {
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.collection-lg .card-img {
+  cursor: pointer;
+  width: 110px;
+  margin: auto;
+}
+
+.collection-lg .btn-collection-lg {
+  margin-top: 1rem;
+}
+
+.collection-lg .btn-link {
+  border: none;
+  background: transparent;
+  color: #888;
+  cursor: pointer;
+}
+
+@media (min-width: 425px) {
+  .collection-lg {
+    width: 350px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .collection-lg input {
+    width: 100%;
+  }
+
+  .collection-lg .card-img {
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .collection-lg {
+    width: 700px;
+    height: 400px;
+  }
+
+  .collection-lg .col-md-4 {
+    margin-bottom: 1rem;
+  }
+}
