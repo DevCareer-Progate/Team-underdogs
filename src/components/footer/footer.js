@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 // Logo Import
 import logoDark from '../../assets/images/common/logo-dark.svg'
 import googleSvg from '../../assets/images/common/Google+.svg'
@@ -20,7 +21,7 @@ class Footer extends Component {
                 <img src={logoDark} alt='logo' />
               </div>
               <div className='msg'>
-                <p>
+                <p style={{ color: '#A2A2A2' }}>
                   {' '}
                   Fusce ut elit aliquet, fermentum leo vel, tempus nunc. Fusce
                   eu rhoncus augue. Fusce vel metus pharetra, fermentum
@@ -29,22 +30,22 @@ class Footer extends Component {
               <div className='social__media'>
                 <div className='socials'>
                   <img
-                    className='img-fluid mt-3 mr-3'
+                    className='img-fluid my-2 mr-3'
                     src={googleSvg}
                     alt='google'
                   />
                   <img
-                    className='img-fluid mt-3 mr-3'
+                    className='img-fluid my-2 mr-3'
                     src={facebookSvg}
                     alt='facebook'
                   />
                   <img
-                    className='img-fluid mt-3 mr-3'
+                    className='img-fluid my-2 mr-3'
                     src={twitterSvg}
                     alt='twitter'
                   />
                   <img
-                    className='img-fluid mt-3'
+                    className='img-fluid my-2'
                     src={instagramSvg}
                     alt='instagram'
                   />
@@ -56,29 +57,29 @@ class Footer extends Component {
               <div className='links'>
                 <ul>
                   <li>
-                    <a style={{ color: '#ccc' }} href='/'>
+                    <Link style={{ color: '#A2A2A2' }} href='/'>
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a style={{ color: '#ccc' }} href='/about'>
+                    <Link style={{ color: '#A2A2A2' }} href='/about'>
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a style={{ color: '#ccc' }} href='/blog'>
+                    <Link style={{ color: '#A2A2A2' }} href='/blog'>
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a style={{ color: '#ccc' }} href='/sell'>
+                    <Link style={{ color: '#A2A2A2' }} href='/sell'>
                       Sell
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a style={{ color: '#ccc' }} href='/contact'>
+                    <Link style={{ color: '#A2A2A2' }} href='/contact'>
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -86,13 +87,13 @@ class Footer extends Component {
             <div className='col-sm-12 col-md-3 col-xl-3'>
               <h2 style={{ color: '#FFFFFF' }}>Contact Us</h2>
               <div className='mails'>
-                <p style={{ color: '#ccc' }}>(+234) 137632128</p>
+                <p style={{ color: '#A2A2A2' }}>(+234) 137632128</p>
                 <Link to='/'>
-                  <p style={{ color: '#ccc' }}>Coinbase@yahoo.com</p>
+                  <p style={{ color: '#A2A2A2' }}>Coinbase@yahoo.com</p>
                 </Link>
-                <p style={{ color: '#ccc' }}>Address goes here</p>
+                <p style={{ color: '#A2A2A2' }}>Address goes here</p>
               </div>
-              <p style={{ color: '#ccc' }}>Download Our App</p>
+              <p style={{ color: '#A2A2A2' }}>Download Our App</p>
             </div>
             <div className='col-sm-12 col-md-3 col-lx-3'>
               <h2 style={{ color: '#FFFFFF' }}>CoinBase Instagram</h2>
@@ -111,7 +112,7 @@ class Footer extends Component {
         </div>
         <div className='container'>
           <div className='copyright'>
-            <p className='text mt-5'>&#169; 2019 Designed by Team-Underdogs</p>
+            <p style={{ color: '#A2A2A2' }}  className='text mt-5'>&#169; 2019  Designed by Cr8tiv_yemmy, Developed by Team-Underdogs</p>
           </div>
         </div>
       </div>
